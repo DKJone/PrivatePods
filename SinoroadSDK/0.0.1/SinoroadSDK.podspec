@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license       = { :type => 'Apache', :file => 'License' }
   s.author        = { 'DKJone' => 'zdk@sinoroad.com' }
   s.platform      = :ios, '8.0'
-  s.source        = { :git => 'https://github.com/DKJone/SinoroadSDK/SinoroadSDK.git', :tag => s.version }
+  s.source        = { :git => 'https://github.com/DKJone/SinoroadSDK.git', :tag => s.version }
   s.source_files  = 'SinoroadSDK/Sources/**/*.{swift,m,h}'
 
   # 依赖项
