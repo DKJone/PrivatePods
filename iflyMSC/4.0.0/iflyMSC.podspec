@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name          = 'iflyMSC'
   s.version       = '4.0.0'
-  s.summary       = 'Sinoroad ios sdk'
+  s.summary       = 'iflyMSC ios sdk'
   s.homepage      = 'https://github.com/DKJone/iflyMSC'
   s.license       = { :type => 'Apache', :file => 'License' }
   s.author        = { 'DKJone' => 'zdk@sinoroad.com' }
