@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.platform      = :ios, '8.0'
   s.source        = { :git => 'https://github.com/DKJone/iflyMSC.git', :tag => s.version }
   s.source_files  = 'lib/*'
-  s.frameworks    = 'Foundation', 'CoreGraphics', 'UIKit' ,'AVFoundation','SystemConfiguration','CoreTelephony','AudioToolbox','CoreLocation','Contacts','AddressBook','QuartzCore','libz'
-
+  s.frameworks    = 'Foundation', 'CoreGraphics', 'UIKit' ,'AVFoundation','SystemConfiguration','CoreTelephony','AudioToolbox','CoreLocation','Contacts','AddressBook','QuartzCore'
+  s.library       = 'libc++','libz'
   # 依赖项
 
 end
