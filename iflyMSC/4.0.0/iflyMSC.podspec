@@ -19,6 +19,11 @@ Pod::Spec.new do |s|
   s.source_files  = 'lib/*'
   s.frameworks    = 'Foundation', 'CoreGraphics', 'UIKit' ,'AVFoundation','SystemConfiguration','CoreTelephony','AudioToolbox','CoreLocation','Contacts','AddressBook','QuartzCore'
   s.library       = 'c++','z'
+  s.vendored_frameworks = 'lib/iflyMSC.framework'
+  s.vendored_library    = ''
+  s.public_header_files = 'lib/**/*.{h}'
+
+
   # 依赖项
 
 end
