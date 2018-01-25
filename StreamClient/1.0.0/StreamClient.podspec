@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author        = { 'DKJone' => 'zdk@sinoroad.com' }
   s.platform      = :ios, '8.0'
   s.source        = { :git => 'https://github.com/DKJone/StreamClient.git', :tag => s.version }
-  s.source_files  = 'lib/*,lib/*/*'
+  s.source_files  = 'lib/*/*'
   s.frameworks    = 'VideoToolbox','CoreMedia','CoreAudio','MobileCoreServices','CoreFoundation', 'CoreGraphics', 'UIKit' ,'AVFoundation','AudioToolbox','CoreLocation','QuartzCore','Foundation'
   s.library       = 'c++','z','iconv.2'
   s.vendored_frameworks = ''
