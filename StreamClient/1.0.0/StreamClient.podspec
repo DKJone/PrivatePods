@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
 
   s.name          = 'StreamClient'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.summary       = 'StreamClient ios sdk'
   s.homepage      = 'https://github.com/DKJone/StreamClient'
   s.license       = { :type => 'Apache', :file => 'License' }
   s.author        = { 'DKJone' => 'zdk@sinoroad.com' }
   s.platform      = :ios, '8.0'
   s.source        = { :git => 'https://github.com/DKJone/StreamClient.git', :tag => s.version }
-  s.source_files  = 'lib/*,lib/ffmpeg3.2/*,lib/qt/*'
+  s.source_files  = 'lib/*'
   s.frameworks    = 'VideoToolbox','CoreMedia','CoreAudio','MobileCoreServices','CoreFoundation', 'CoreGraphics', 'UIKit' ,'AVFoundation','AudioToolbox','CoreLocation','QuartzCore','Foundation'
   s.library       = 'c++','z','iconv.2','bz2',
   s.vendored_frameworks = ''
