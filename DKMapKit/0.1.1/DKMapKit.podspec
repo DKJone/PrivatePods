@@ -84,7 +84,33 @@ Pod::Spec.new do |s|
     mkdir DKMapKit/Vendors/BaiduMapAPI_Utils.framework/Modules
     touch DKMapKit/Vendors/BaiduMapAPI_Utils.framework/Modules/module.modulemap
     cat <<-EOF > DKMapKit/Vendors/BaiduMapAPI_Utils.framework/Modules/module.modulemap
-    framework module BaiduMapAPI_Base {
+    framework module BaiduMapAPI_Utils {
+        umbrella header "BMKBaseComponent.h"
+        export *
+        link "sqlite3.0"
+        link "c++"
+    }
+    \EOF
+
+    # 创建 search
+    rm -rf DKMapKit/Vendors/BaiduMapAPI_Search.framework/Modules
+    mkdir DKMapKit/Vendors/BaiduMapAPI_Search.framework/Modules
+    touch DKMapKit/Vendors/BaiduMapAPI_Search.framework/Modules/module.modulemap
+    cat <<-EOF > DKMapKit/Vendors/BaiduMapAPI_Search.framework/Modules/module.modulemap
+    framework module BaiduMapAPI_Search {
+        umbrella header "BMKBaseComponent.h"
+        export *
+        link "sqlite3.0"
+        link "c++"
+    }
+    \EOF
+
+    # 创建BaiduMapAPI_Cloud Module
+    rm -rf DKMapKit/Vendors/BaiduMapAPI_Cloud.framework/Modules
+    mkdir DKMapKit/Vendors/BaiduMapAPI_Cloud.framework/Modules
+    touch DKMapKit/Vendors/BaiduMapAPI_Cloud.framework/Modules/module.modulemap
+    cat <<-EOF > DKMapKit/Vendors/BaiduMapAPI_Cloud.framework/Modules/module.modulemap
+    framework module BaiduMapAPI_Cloud {
         umbrella header "BMKBaseComponent.h"
         export *
         link "sqlite3.0"
