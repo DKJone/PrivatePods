@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
         #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/DKMapKit/Vendors',
         'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/DKMapKit/Vendors/*.framework/Headers',
         'LD_RUNPATH_SEARCH_PATHS' => '$(PODS_ROOT)/DKMapKit/Vendors/',
-        'OTHER_LDFLAGS' => '-ObjC','-all_load'
+        'OTHER_LDFLAGS' => '-ObjC','OTHER_LDFLAGS' => '-all_load'
     }
 
     s.prepare_command = <<-EOF
